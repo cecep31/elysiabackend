@@ -1,0 +1,23 @@
+{
+  "name": "elysiabackend",
+  "version": "1.0.50",
+  "scripts": {
+    "dev": "bun --watch src/index.ts",
+    "build": "bun build src/index.ts",
+    "start": "NODE_ENV=production bun src/index.ts",
+    "test": "bun test"
+  },
+  "dependencies": {
+    "@elysiajs/swagger": "^0.8.0",
+    "@prisma/client": "^5.7.1",
+    "drizzle-orm": "^0.29.1",
+    "elysia": "latest",
+    "postgres": "^3.4.3",
+    "prisma": "^5.7.1"
+  },
+  "devDependencies": {
+    "bun-types": "latest",
+    "drizzle-kit": "^0.20.7"
+  },
+  "module": "src/index.js"
+}
